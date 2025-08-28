@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="canonical" href="https://tokyrylo.github.io/aqa/getting_started/data_types/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Типы данных - Start AQA Python</title>
+        <link rel="stylesheet" href="../../css/theme.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css">
+        <script src="../../js/theme.js" defer></script>
+      
+        <script> var base_url = "../.." </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+ <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body>
+    <header class="header">
+        <a id="nav-toggle" class="pizza">&#9776;</a>
+        <div class="title">
+            <a href="/" class="logo">Start AQA Python </a>
+             
+            <div role="search" class="search">
+                <form><input type="search" placeholder="Search docs" id="mkdocs-search-query" /></form>
+            </div>
+        </div>
+         <a id="nav-scrh" class="scrh">&#8981;</a>
+    </header>
+    <div class="side" id="side">
+        <h2>Page</h2>
+        <ul>
+         
+              <!--
+
+-->
+
+<li >
+    <a href="../..">Home</a>
+</li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Первые шаги
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../install/">Установка</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../start_program/">Запуск первой программы</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Основы языка
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../variables/">Переменные</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li class="active">
+    <a href="./">Типы данных</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../operators/">Операторы</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../input/">Ввод данных</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../final_task/">Мини задача</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Управляющие конструкции
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../control-flow/if-else/">If/else</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../control-flow/for-while/">Циклы</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../control-flow/final_task/">Мини задача</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Функции
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/">Зачем нужна функция</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/creating/">Как писать свои функции</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/args/">Аргументы и возвращаемые значения</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/final_task.md">Практика функция проверки логина и пароля.</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Работа с коллекциями
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../collections/index.md">Списки, кортежи, словари</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../collections/final_task.md">Как хранить и перебирать данные</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../collections/final_task.md">Практика создание список пользователей и проверка, зарегистрирован ли человек</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Работа с файлами
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../files/index.md">Чтение и запись файлов</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../files/final_task.md">Практика сохранить результаты теста в файл</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Ошибки и отладка
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../errors/index.md">Типичные ошибки новичков</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../errors/final_task.md">Как читать текст ошибки</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../errors/try-except.md">try / except</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Введение в тестирование
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../testing/index.md">Что такое юнит-тесты и автоматизация</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../testing/final_task.md">Библиотека unittest</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../testing/final_task.md">Простейший автотест</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Первые шаги в AQA
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../aqa/index.md">Установка pytest</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../aqa/final_task.md">Структура тестов</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../aqa/final_task.md">Написание первых тестов</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Работа с браузером (Selenium / Playwright)
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../browser/index.md">Установка Selenium</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../browser/final_task.md">Первый тест, открыть страницу и проверить заголовок.</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Работа с API
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../api/index.md">Установка requests</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../api/final_task.md">GET и POST запросы</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../api/final_task.md">Проверка ответа API</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Организация проекта
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../project-structure/index.md">Как хранить тесты</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../project-structure/final_task.md">Запуск тестов</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../project-structure/final_task.md">Отчеты</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Следующие шаги
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../next-steps/index.md">Git и GitHub</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../next-steps/final_task.md">CI/CD</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../next-steps/final_task.md">Контейнеры (Docker)</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+        </ul>
+          <h2>Table Of Contents</h2>
+          <ul id="toc" class="current">
+            
+              <li><a href="#python">Типы данных в Python</a></li>
+              
+                  <li class="child"><a href="#1">1. Числа</a></li>
+              
+                  <li class="child"><a href="#2-str">2. Строки (str)</a></li>
+              
+                  <li class="child"><a href="#3-bool">3. Логический тип (bool)</a></li>
+              
+                  <li class="child"><a href="#4-list">4. Списки (list)</a></li>
+              
+                  <li class="child"><a href="#5-tuple">5. Кортежи (tuple)</a></li>
+              
+                  <li class="child"><a href="#6-dict">6. Словари (dict)</a></li>
+              
+                  <li class="child"><a href="#7-set">7. Множества (set)</a></li>
+              
+                  <li class="child"><a href="#8-none">8. None (пустое значение)</a></li>
+              
+                  <li class="child"><a href="#9">9. Дополнительные (более сложные)</a></li>
+              
+            
+        </ul>
+        <div class="about">
+            <hr/>
+            Built with 🛠 <a href="https://www.mkdocs.org">MkDocs</a> - 
+            Theme 🖤 <a href="https://github.com/g3xx/mkdocs-github">Github</a>.
+        </div>
+    </div>
+    <div class="spacer"><!-- i am margin --></div>
+    <div class="markdown-body">
+      
+        <div class="prev">
+          
+            <a href="../variables/" title="Переменные">&#8592; Previous Page</a>
+          
+        </div>
+         <div class="next">
+          
+        <a href="../operators/" title="Операторы"/>Next Page &#8594;</a>
+          
+        </div>
+      
+      <div class="clear"></div>
+    <div id="mkdocs-search-results"></div>
+
+      
+        <div id="body">
+            <h1 id="python">Типы данных в Python</h1>
+<p>Тип данных = форма информации.
+Представь, что у тебя дома разные коробки:</p>
+<ul>
+<li>
+<p>В одной лежат <strong>яблоки</strong> (числа).</p>
+</li>
+<li>
+<p>В другой — <strong>письма</strong> (строки).</p>
+</li>
+<li>
+<p>В третьей — <strong>лампочка: горит/не горит</strong> (логические значения).</p>
+</li>
+<li>
+<p>А бывают коробки, где внутри ещё коробки (списки, словари).</p>
+</li>
+</ul>
+<h2 id="1">1. Числа</h2>
+<p><strong>int — целые числа</strong></p>
+<p>Без запятых.
+Примеры: возраст, количество друзей, число лайков.</p>
+<pre><code class="language-python">age = 25
+likes = 120
+print(age + likes)   # 145
+</code></pre>
+<p><strong>float — числа с точкой</strong>
+Примеры: деньги, рост, температура.</p>
+<pre><code class="language-python">temperature = 36.6
+salary = 1234.50
+print(temperature + 1.2)   # 37.8
+</code></pre>
+<h2 id="2-str">2. Строки (str)</h2>
+<p>Строка = текст в кавычках.
+Примеры: имя, сообщение в чате, пароль.</p>
+<pre><code class="language-python">name = &quot;Ира&quot;
+message = &quot;Привет!&quot;
+print(name + &quot; говорит: &quot; + message)
+</code></pre>
+<p>Результат:</p>
+<pre><code class="language-bash">Ира говорит: Привет!
+</code></pre>
+<h2 id="3-bool">3. Логический тип (bool)</h2>
+<p>Может быть только два значения:</p>
+<ul>
+<li>
+<p><code>True</code> (правда)</p>
+</li>
+<li>
+<p><code>False</code> (ложь)</p>
+</li>
+</ul>
+<p>Примеры: включён ли свет, зарегистрирован ли пользователь, идёт ли дождь.</p>
+<pre><code class="language-python">is_online = True
+has_money = False
+print(&quot;Пользователь в сети?&quot;, is_online)
+</code></pre>
+<h2 id="4-list">4. Списки (list)</h2>
+<p>Список = коробка, где много значений подряд.
+Примеры: список покупок, имена друзей, числа.</p>
+<pre><code class="language-python">fruits = [&quot;яблоко&quot;, &quot;банан&quot;, &quot;киви&quot;]
+print(fruits[0])   # яблоко
+print(len(fruits)) # 3 (количество элементов)
+</code></pre>
+<h2 id="5-tuple">5. Кортежи (tuple)</h2>
+<p>То же, что список, но <strong>нельзя менять</strong>.
+Пример: координаты GPS, дата рождения.</p>
+<pre><code class="language-python">birth_date = (2000, 5, 15)  # год, месяц, день
+print(&quot;Год рождения:&quot;, birth_date[0])
+</code></pre>
+<h2 id="6-dict">6. Словари (dict)</h2>
+<p>Это как словарь в реальной жизни: «слово → значение».
+Примеры: данные о пользователе, настройки программы.</p>
+<pre><code class="language-python">user = {
+    &quot;name&quot;: &quot;Ира&quot;,
+    &quot;age&quot;: 25,
+    &quot;is_active&quot;: True
+}
+print(user[&quot;name&quot;])   # Ира
+</code></pre>
+<h2 id="7-set">7. Множества (set)</h2>
+<p>Набор уникальных значений (повторы убираются).
+Пример: список посещённых городов.</p>
+<pre><code class="language-python">cities = {&quot;Киев&quot;, &quot;Львов&quot;, &quot;Киев&quot;}
+print(cities)   # {'Киев', 'Львов'} — повтора нет
+</code></pre>
+<h2 id="8-none">8. None (пустое значение)</h2>
+<p><code>None</code> = «ничего нет».
+Пример: пользователь ещё не ввёл email.</p>
+<pre><code class="language-python">email = None
+print(&quot;Email:&quot;, email)   # Email: None
+</code></pre>
+<h2 id="9">9. Дополнительные (более сложные)</h2>
+<ul>
+<li>
+<p><strong>bytes</strong> — «сырые данные», например, файл в бинарном виде.</p>
+</li>
+<li>
+<p><strong>complex</strong> — комплексные числа (редко нужны в AQA).</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Тип данных</th>
+<th>Пример из жизни</th>
+<th>В Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int</td>
+<td>количество шагов в фитнес-приложении</td>
+<td><code>steps = 10500</code></td>
+</tr>
+<tr>
+<td>float</td>
+<td>баланс на карте</td>
+<td><code>balance = 1234.56</code></td>
+</tr>
+<tr>
+<td>str</td>
+<td>сообщение в Telegram</td>
+<td><code>msg = "Привет!"</code></td>
+</tr>
+<tr>
+<td>bool</td>
+<td>включён ли свет</td>
+<td><code>is_light_on = True</code></td>
+</tr>
+<tr>
+<td>list</td>
+<td>список покупок</td>
+<td><code>shopping = ["хлеб", "молоко", "сыр"]</code></td>
+</tr>
+<tr>
+<td>tuple</td>
+<td>дата рождения</td>
+<td><code>birthday = (2000, 5, 15)</code></td>
+</tr>
+<tr>
+<td>dict</td>
+<td>профиль пользователя</td>
+<td><code>user = {"name": "Ира", "age": 25}</code></td>
+</tr>
+<tr>
+<td>set</td>
+<td>уникальные теги</td>
+<td><code>tags = {"python", "qa", "python"}</code></td>
+</tr>
+<tr>
+<td>None</td>
+<td>нет данных</td>
+<td><code>phone = None</code></td>
+</tr>
+</tbody>
+</table>
+        </div>
+      
+      <hr/>
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2025-08-28 00:15:50.286443+00:00
+  -->
+</div>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
+</html>

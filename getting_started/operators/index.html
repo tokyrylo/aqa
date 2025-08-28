@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="canonical" href="https://tokyrylo.github.io/aqa/getting_started/operators/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Операторы - Start AQA Python</title>
+        <link rel="stylesheet" href="../../css/theme.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css">
+        <script src="../../js/theme.js" defer></script>
+      
+        <script> var base_url = "../.." </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+ <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body>
+    <header class="header">
+        <a id="nav-toggle" class="pizza">&#9776;</a>
+        <div class="title">
+            <a href="/" class="logo">Start AQA Python </a>
+             
+            <div role="search" class="search">
+                <form><input type="search" placeholder="Search docs" id="mkdocs-search-query" /></form>
+            </div>
+        </div>
+         <a id="nav-scrh" class="scrh">&#8981;</a>
+    </header>
+    <div class="side" id="side">
+        <h2>Page</h2>
+        <ul>
+         
+              <!--
+
+-->
+
+<li >
+    <a href="../..">Home</a>
+</li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Первые шаги
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../install/">Установка</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../start_program/">Запуск первой программы</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Основы языка
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../variables/">Переменные</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../data_types/">Типы данных</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li class="active">
+    <a href="./">Операторы</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../input/">Ввод данных</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../final_task/">Мини задача</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Управляющие конструкции
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../control-flow/if-else/">If/else</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../control-flow/for-while/">Циклы</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../control-flow/final_task/">Мини задача</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Функции
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/">Зачем нужна функция</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/creating/">Как писать свои функции</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/args/">Аргументы и возвращаемые значения</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/final_task.md">Практика функция проверки логина и пароля.</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Работа с коллекциями
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../collections/index.md">Списки, кортежи, словари</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../collections/final_task.md">Как хранить и перебирать данные</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../collections/final_task.md">Практика создание список пользователей и проверка, зарегистрирован ли человек</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Работа с файлами
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../files/index.md">Чтение и запись файлов</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../files/final_task.md">Практика сохранить результаты теста в файл</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Ошибки и отладка
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../errors/index.md">Типичные ошибки новичков</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../errors/final_task.md">Как читать текст ошибки</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../errors/try-except.md">try / except</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Введение в тестирование
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../testing/index.md">Что такое юнит-тесты и автоматизация</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../testing/final_task.md">Библиотека unittest</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../testing/final_task.md">Простейший автотест</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Первые шаги в AQA
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../aqa/index.md">Установка pytest</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../aqa/final_task.md">Структура тестов</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../aqa/final_task.md">Написание первых тестов</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Работа с браузером (Selenium / Playwright)
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../browser/index.md">Установка Selenium</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../browser/final_task.md">Первый тест, открыть страницу и проверить заголовок.</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Работа с API
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../api/index.md">Установка requests</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../api/final_task.md">GET и POST запросы</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../api/final_task.md">Проверка ответа API</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Организация проекта
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../project-structure/index.md">Как хранить тесты</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../project-structure/final_task.md">Запуск тестов</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../project-structure/final_task.md">Отчеты</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Следующие шаги
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../next-steps/index.md">Git и GitHub</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../next-steps/final_task.md">CI/CD</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../next-steps/final_task.md">Контейнеры (Docker)</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+        </ul>
+          <h2>Table Of Contents</h2>
+          <ul id="toc" class="current">
+            
+              <li><a href="#python">Операторы в Python</a></li>
+              
+                  <li class="child"><a href="#1">1. Арифметические операторы</a></li>
+              
+                  <li class="child"><a href="#2">2. Операторы сравнения</a></li>
+              
+                  <li class="child"><a href="#3">3. Логические операторы</a></li>
+              
+                  <li class="child"><a href="#4">4. Комбинации</a></li>
+              
+            
+        </ul>
+        <div class="about">
+            <hr/>
+            Built with 🛠 <a href="https://www.mkdocs.org">MkDocs</a> - 
+            Theme 🖤 <a href="https://github.com/g3xx/mkdocs-github">Github</a>.
+        </div>
+    </div>
+    <div class="spacer"><!-- i am margin --></div>
+    <div class="markdown-body">
+      
+        <div class="prev">
+          
+            <a href="../data_types/" title="Типы данных">&#8592; Previous Page</a>
+          
+        </div>
+         <div class="next">
+          
+        <a href="../input/" title="Ввод данных"/>Next Page &#8594;</a>
+          
+        </div>
+      
+      <div class="clear"></div>
+    <div id="mkdocs-search-results"></div>
+
+      
+        <div id="body">
+            <h1 id="python">Операторы в Python</h1>
+<p>Оператор = действие над данными.
+Например, в калькуляторе ты нажимаешь + или - → это и есть операторы.</p>
+<p>В Python есть три главных группы:</p>
+<ol>
+<li>
+<p><strong>Арифметические</strong> (сложение, вычитание и т.д.)</p>
+</li>
+<li>
+<p><strong>Сравнения</strong> (больше, меньше, равно)</p>
+</li>
+<li>
+<p><strong>Логические</strong> (и/или/не)</p>
+</li>
+</ol>
+<h2 id="1">1. Арифметические операторы</h2>
+<p>Это как обычная математика:</p>
+<pre><code class="language-python">a = 10
+b = 3
+
+print(a + b)   # 13 (сложение)
+print(a - b)   # 7  (вычитание)
+print(a * b)   # 30 (умножение)
+print(a / b)   # 3.333... (деление с остатком)
+print(a // b)  # 3 (целая часть от деления)
+print(a % b)   # 1 (остаток от деления)
+print(a ** b)  # 1000 (возведение в степень: 10^3)
+</code></pre>
+<p>В жизни:</p>
+<ul>
+<li>
+<p>Сколько будет 2 пиццы по 250 грн? → <code>2 * 250</code>.</p>
+</li>
+<li>
+<p>Остаток от деления зарплаты на 7 дней → <code>%</code>.</p>
+</li>
+</ul>
+<h2 id="2">2. Операторы сравнения</h2>
+<p>Они отвечают на вопрос «да или нет» → результат всегда <code>True</code> или <code>False</code>.</p>
+<pre><code class="language-python">age = 18
+
+print(age == 18)  # True  (равно)
+print(age != 18)  # False (не равно)
+print(age &gt; 16)   # True  (больше)
+print(age &lt; 21)   # True  (меньше)
+print(age &gt;= 18)  # True  (больше или равно)
+print(age &lt;= 17)  # False (меньше или равно)
+</code></pre>
+<p>В жизни:</p>
+<ul>
+<li>
+<p>Достиг ли человек совершеннолетия? (<code>age &gt;= 18</code>)</p>
+</li>
+<li>
+<p>Яблок больше, чем груш? (<code>apples &gt; pears</code>)</p>
+</li>
+</ul>
+<h2 id="3">3. Логические операторы</h2>
+<p>Используются для работы с логическими значениями (<code>True/False</code>).</p>
+<p><strong>and (И)</strong></p>
+<p>Будет <code>True</code>, если оба условия истинны.</p>
+<pre><code class="language-python">is_adult = True
+has_ticket = False
+
+print(is_adult and has_ticket)  # False (нет билета)
+</code></pre>
+<p><strong>or (ИЛИ)</strong></p>
+<p>Будет <code>True</code>, если хотя бы одно условие истинно.</p>
+<pre><code class="language-python">is_raining = True
+has_umbrella = False
+
+print(is_raining or has_umbrella)  # True (идёт дождь, даже без зонта)
+</code></pre>
+<p><strong>not (НЕ)</strong></p>
+<p>Меняет значение на противоположное.</p>
+<pre><code class="language-python">is_light_on = True
+print(not is_light_on)  # False
+</code></pre>
+<p>В жизни:</p>
+<ul>
+<li>
+<p>Человек взрослый и у него есть паспорт → можно войти.</p>
+</li>
+<li>
+<p>На улице дождь или снег → берём зонт.</p>
+</li>
+<li>
+<p>Свет не включён → темно.</p>
+</li>
+</ul>
+<h2 id="4">4. Комбинации</h2>
+<p>Операторы можно соединять:</p>
+<pre><code class="language-python">age = 20
+has_passport = True
+
+print(age &gt;= 18 and has_passport)  # True
+</code></pre>
+        </div>
+      
+      <hr/>
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2025-08-28 00:15:50.289203+00:00
+  -->
+</div>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
+</html>

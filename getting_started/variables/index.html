@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="canonical" href="https://tokyrylo.github.io/aqa/getting_started/variables/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Переменные - Start AQA Python</title>
+        <link rel="stylesheet" href="../../css/theme.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css">
+        <script src="../../js/theme.js" defer></script>
+      
+        <script> var base_url = "../.." </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+ <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body>
+    <header class="header">
+        <a id="nav-toggle" class="pizza">&#9776;</a>
+        <div class="title">
+            <a href="/" class="logo">Start AQA Python </a>
+             
+            <div role="search" class="search">
+                <form><input type="search" placeholder="Search docs" id="mkdocs-search-query" /></form>
+            </div>
+        </div>
+         <a id="nav-scrh" class="scrh">&#8981;</a>
+    </header>
+    <div class="side" id="side">
+        <h2>Page</h2>
+        <ul>
+         
+              <!--
+
+-->
+
+<li >
+    <a href="../..">Home</a>
+</li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Первые шаги
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../install/">Установка</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../start_program/">Запуск первой программы</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Основы языка
+    <ul>
+        
+            <!--
+
+-->
+
+<li class="active">
+    <a href="./">Переменные</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../data_types/">Типы данных</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../operators/">Операторы</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../input/">Ввод данных</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../final_task/">Мини задача</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Управляющие конструкции
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../control-flow/if-else/">If/else</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../control-flow/for-while/">Циклы</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../control-flow/final_task/">Мини задача</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Функции
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/">Зачем нужна функция</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/creating/">Как писать свои функции</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/args/">Аргументы и возвращаемые значения</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/final_task.md">Практика функция проверки логина и пароля.</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Работа с коллекциями
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../collections/index.md">Списки, кортежи, словари</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../collections/final_task.md">Как хранить и перебирать данные</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../collections/final_task.md">Практика создание список пользователей и проверка, зарегистрирован ли человек</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Работа с файлами
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../files/index.md">Чтение и запись файлов</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../files/final_task.md">Практика сохранить результаты теста в файл</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Ошибки и отладка
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../errors/index.md">Типичные ошибки новичков</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../errors/final_task.md">Как читать текст ошибки</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../errors/try-except.md">try / except</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Введение в тестирование
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../testing/index.md">Что такое юнит-тесты и автоматизация</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../testing/final_task.md">Библиотека unittest</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../testing/final_task.md">Простейший автотест</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Первые шаги в AQA
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../aqa/index.md">Установка pytest</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../aqa/final_task.md">Структура тестов</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../aqa/final_task.md">Написание первых тестов</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Работа с браузером (Selenium / Playwright)
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../browser/index.md">Установка Selenium</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../browser/final_task.md">Первый тест, открыть страницу и проверить заголовок.</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Работа с API
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../api/index.md">Установка requests</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../api/final_task.md">GET и POST запросы</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../api/final_task.md">Проверка ответа API</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Организация проекта
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../project-structure/index.md">Как хранить тесты</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../project-structure/final_task.md">Запуск тестов</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../project-structure/final_task.md">Отчеты</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+              <!--
+
+-->
+
+  <li>
+    Следующие шаги
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../next-steps/index.md">Git и GitHub</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../next-steps/final_task.md">CI/CD</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../next-steps/final_task.md">Контейнеры (Docker)</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+         
+        </ul>
+          <h2>Table Of Contents</h2>
+          <ul id="toc" class="current">
+            
+              <li><a href="#_1">Переменные и типы данных</a></li>
+              
+                  <li class="child"><a href="#1">1. Что такое переменная</a></li>
+              
+                  <li class="child"><a href="#2">2. Типы данных</a></li>
+              
+                  <li class="child"><a href="#3">3. Зачем нужны переменные</a></li>
+              
+                  <li class="child"><a href="#naming-convention">Как называть переменные (Naming Convention)</a></li>
+              
+                  <li class="child"><a href="#pep8-python">Правила хорошего стиля (PEP8 — стандарт Python)</a></li>
+              
+                  <li class="child"><a href="#_2">Часто используемые суффиксы и префиксы</a></li>
+              
+                  <li class="child"><a href="#_3">Ошибки, которых лучше избегать</a></li>
+              
+            
+        </ul>
+        <div class="about">
+            <hr/>
+            Built with 🛠 <a href="https://www.mkdocs.org">MkDocs</a> - 
+            Theme 🖤 <a href="https://github.com/g3xx/mkdocs-github">Github</a>.
+        </div>
+    </div>
+    <div class="spacer"><!-- i am margin --></div>
+    <div class="markdown-body">
+      
+        <div class="prev">
+          
+            <a href="../start_program/" title="Запуск первой программы">&#8592; Previous Page</a>
+          
+        </div>
+         <div class="next">
+          
+        <a href="../data_types/" title="Типы данных"/>Next Page &#8594;</a>
+          
+        </div>
+      
+      <div class="clear"></div>
+    <div id="mkdocs-search-results"></div>
+
+      
+        <div id="body">
+            <h1 id="_1">Переменные и типы данных</h1>
+<p>Представь, что компьютер — это большой склад, а переменная — это коробка на складе.
+Ты можешь положить в коробку что угодно: число, слово, даже «правда/ложь».
+А потом обращаться к этой коробке по имени.</p>
+<h2 id="1">1. Что такое переменная</h2>
+<p>В жизни:</p>
+<ul>
+<li>
+<p>В телефоне у тебя есть контакт с именем “Мама”.</p>
+</li>
+<li>
+<p>В этом контакте лежит номер телефона.</p>
+</li>
+<li>
+<p>Имя — это «переменная».</p>
+</li>
+<li>
+<p>Номер — это «значение».</p>
+</li>
+</ul>
+<p>В Python:</p>
+<pre><code class="language-python">mama = &quot;+380123456789&quot;
+print(mama)
+</code></pre>
+<p>Компьютер напечатает:</p>
+<pre><code class="language-python">+380123456789
+</code></pre>
+<h2 id="2">2. Типы данных</h2>
+<p><strong>📌 Числа (int, float)</strong></p>
+<p>Это как в калькуляторе: можно складывать, умножать.</p>
+<pre><code class="language-python">a = 5        # целое число (int)
+b = 2.5      # число с точкой (float)
+
+print(a + b)   # 7.5
+print(a * 10)  # 50
+</code></pre>
+<p><strong>📌 Строки (str)</strong></p>
+<p>Строка = текст.
+Всё, что в кавычках, — это строка.</p>
+<pre><code class="language-python">name = &quot;Ира&quot;
+print(&quot;Привет, &quot; + name)
+</code></pre>
+<p>Результат:</p>
+<pre><code class="language-bash">Привет, Ира
+</code></pre>
+<p><strong>📌 Логические значения (bool)</strong></p>
+<p>Это как «Да» или «Нет», «Правда» или «Ложь».</p>
+<p>В Python всего два значения:</p>
+<ul>
+<li>
+<p><code>True</code> (правда)</p>
+</li>
+<li>
+<p><code>False</code> (ложь)</p>
+</li>
+</ul>
+<pre><code class="language-python">is_raining = True
+has_umbrella = False
+print(is_raining)     # True
+print(has_umbrella)   # False
+</code></pre>
+<p>Из жизни:</p>
+<ul>
+<li>
+<p>Включён ли свет? (True/False)</p>
+</li>
+<li>
+<p>Есть ли деньги на карте? (True/False)</p>
+</li>
+</ul>
+<h2 id="3">3. Зачем нужны переменные</h2>
+<p>Они позволяют хранить информацию и использовать её много раз.</p>
+<p>Например, калькулятор чаевых:</p>
+<pre><code class="language-python">bill = 500       # сумма счёта
+tip_percent = 10 # чаевые
+tip = bill * tip_percent / 100
+
+print(&quot;Сумма чаевых:&quot;, tip)
+</code></pre>
+<p>Компьютер скажет:</p>
+<pre><code class="language-python">Сумма чаевых: 50.0
+</code></pre>
+<h2 id="naming-convention">Как называть переменные (Naming Convention)</h2>
+<p><strong>1. Название должно быть информативным</strong></p>
+<p>❌ Плохо:</p>
+<pre><code class="language-python">x = &quot;Ира&quot;
+y = 25
+z = True
+</code></pre>
+<p>Через неделю забудешь, что значит <code>x</code>, <code>y</code> и <code>z</code>.</p>
+<p>✅ Хорошо:</p>
+<pre><code class="language-python">user_name = &quot;Ира&quot;
+user_age = 25
+likes_pizza = True
+</code></pre>
+<p>Теперь сразу понятно: имя пользователя, возраст, любит ли пиццу.</p>
+<h2 id="pep8-python">Правила хорошего стиля (PEP8 — стандарт Python)</h2>
+<ul>
+<li>
+<p>Только латиница (не <code>имя</code>, а <code>name</code>).</p>
+</li>
+<li>
+<p>Используем <strong>snake_case</strong> (слова разделяются нижним подчёркиванием). Например:</p>
+</li>
+<li>
+<p><code>user_name</code> ✅</p>
+</li>
+<li>
+<p><code>UserName</code> ❌ (так в Python принято для классов, а не переменных).</p>
+</li>
+<li>
+<p>Названия должны быть существительными (что это такое), а не глаголами.</p>
+</li>
+</ul>
+<h2 id="_2">Часто используемые суффиксы и префиксы</h2>
+<p>Чтобы сразу понять тип переменной по названию:</p>
+<ul>
+<li>Для строк (str):</li>
+</ul>
+<pre><code class="language-python">first_name = &quot;Ivan&quot;
+last_name = &quot;Petrenko&quot;
+message_text = &quot;Hello&quot;
+</code></pre>
+<ul>
+<li>Для чисел (int, float):</li>
+</ul>
+<pre><code class="language-python">age = 25
+price_usd = 19.99
+order_count = 3
+</code></pre>
+<ul>
+<li>Для логических (bool): начинаем с is / has / can:</li>
+</ul>
+<pre><code class="language-python">is_active = True      # активный ли пользователь
+has_money = False     # есть ли деньги
+can_login = True      # может ли войти
+</code></pre>
+<h2 id="_3">Ошибки, которых лучше избегать</h2>
+<p>❌ Не используем слишком короткие названия:</p>
+<pre><code class="language-python">a = 100
+b = 200
+c = a + b
+</code></pre>
+<p>✅ Лучше:</p>
+<pre><code class="language-python">product_price = 100
+delivery_price = 200
+total_price = product_price + delivery_price
+</code></pre>
+<p>❌ Не используем имена встроенных функций:</p>
+<pre><code class="language-python">list = [1, 2, 3]   # плохо, list — это встроенный тип в Python
+</code></pre>
+<p>✅ Лучше:</p>
+<pre><code class="language-python">numbers_list = [1, 2, 3]
+</code></pre>
+        </div>
+      
+      <hr/>
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2025-08-28 00:15:50.290596+00:00
+  -->
+</div>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
+</html>
