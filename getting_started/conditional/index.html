@@ -11,9 +11,9 @@
         
         
         
-        <link rel="canonical" href="https://tokyrylo.github.io/aqa/functions/args/">
+        <link rel="canonical" href="https://tokyrylo.github.io/aqa/getting_started/conditional/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Аргументы и возвращаемые значения - Start AQA Python</title>
+        <title>Условные конструкции - Start AQA Python</title>
         <link rel="stylesheet" href="../../css/theme.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css">
         <script src="../../js/theme.js" defer></script>
@@ -66,7 +66,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/install/">Установка</a>
+    <a href="../install/">Установка</a>
 </li>
 
         
@@ -75,7 +75,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/venv/">Виртуальное окружение (venv) — как создавать и использовать</a>
+    <a href="../venv/">Виртуальное окружение (venv) — как создавать и использовать</a>
 </li>
 
         
@@ -84,7 +84,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/start_program/">Запуск первой программы</a>
+    <a href="../start_program/">Запуск первой программы</a>
 </li>
 
         
@@ -105,7 +105,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/variables/">Переменные</a>
+    <a href="../variables/">Переменные</a>
 </li>
 
         
@@ -114,7 +114,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/data_types/">Типы данных</a>
+    <a href="../data_types/">Типы данных</a>
 </li>
 
         
@@ -123,7 +123,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/operators/">Операторы</a>
+    <a href="../operators/">Операторы</a>
 </li>
 
         
@@ -132,7 +132,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/strings/">Строки</a>
+    <a href="../strings/">Строки</a>
 </li>
 
         
@@ -141,7 +141,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/collections/">Коллекции</a>
+    <a href="../collections/">Коллекции</a>
 </li>
 
         
@@ -150,7 +150,16 @@
 -->
 
 <li >
-    <a href="../../getting_started/input/">Ввод данных</a>
+    <a href="../input/">Ввод данных</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li class="active">
+    <a href="./">Условные конструкции</a>
 </li>
 
         
@@ -159,16 +168,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/conditional/">Условные конструкции</a>
-</li>
-
-        
-            <!--
-
--->
-
-<li >
-    <a href="../../getting_started/loops/">Циклы</a>
+    <a href="../loops/">Циклы</a>
 </li>
 
         
@@ -189,7 +189,7 @@
 -->
 
 <li >
-    <a href="../">Зачем нужна функция</a>
+    <a href="../../functions/">Зачем нужна функция</a>
 </li>
 
         
@@ -198,16 +198,7 @@
 -->
 
 <li >
-    <a href="../creating/">Как писать свои функции</a>
-</li>
-
-        
-            <!--
-
--->
-
-<li class="active">
-    <a href="./">Аргументы и возвращаемые значения</a>
+    <a href="../../functions/creating/">Как писать свои функции</a>
 </li>
 
         
@@ -216,7 +207,16 @@
 -->
 
 <li >
-    <a href="../final_task.md">Практика функция проверки логина и пароля.</a>
+    <a href="../../functions/args/">Аргументы и возвращаемые значения</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/final_task.md">Практика функция проверки логина и пароля.</a>
 </li>
 
         
@@ -579,17 +579,17 @@
           <h2>Table Of Contents</h2>
           <ul id="toc" class="current">
             
-              <li><a href="#_1">Аргументы и возвращаемые значения функций</a></li>
+              <li><a href="#python-if-elif-else">Условные конструкции в Python (if, elif, else)</a></li>
               
-                  <li class="child"><a href="#1">1. Аргументы (параметры)</a></li>
+                  <li class="child"><a href="#1">1. Базовый синтаксис</a></li>
               
-                  <li class="child"><a href="#3-args">3. *args — любое количество позиционных аргументов</a></li>
+                  <li class="child"><a href="#2">2. Простейший пример</a></li>
               
-                  <li class="child"><a href="#4-kwargs">4. **kwargs — любое количество именованных аргументов</a></li>
+                  <li class="child"><a href="#3">3. Логические операторы</a></li>
               
-                  <li class="child"><a href="#5-args-kwargs">5. Комбинирование обычных аргументов, args и *kwargs</a></li>
+                  <li class="child"><a href="#4">4. Вложенные условия</a></li>
               
-                  <li class="child"><a href="#6-return">6. Возвращаемое значение (return)</a></li>
+                  <li class="child"><a href="#5">5. Тернарный оператор</a></li>
               
             
         </ul>
@@ -604,12 +604,12 @@
       
         <div class="prev">
           
-            <a href="../creating/" title="Как писать свои функции">&#8592; Previous Page</a>
+            <a href="../input/" title="Ввод данных">&#8592; Previous Page</a>
           
         </div>
          <div class="next">
           
-            Next Page &#8594;
+        <a href="../loops/" title="Циклы"/>Next Page &#8594;</a>
           
         </div>
       
@@ -618,159 +618,77 @@
 
       
         <div id="body">
-            <h1 id="_1">Аргументы и возвращаемые значения функций</h1>
-<h2 id="1">1. Аргументы (параметры)</h2>
-<p><strong>Что это</strong>:</p>
+            <h1 id="python-if-elif-else">Условные конструкции в Python (if, elif, else)</h1>
+<p>В автоматизации тестирования часто нужно выполнять разные действия в зависимости от условий:</p>
 <ul>
 <li>
-<p>Данные, которые мы передаём функции, чтобы она могла с ними работать.</p>
+<p>проверять статус ответа API,</p>
 </li>
 <li>
-<p>Это как ингредиенты для рецепта: без них нельзя приготовить блюдо.</p>
+<p>анализировать результат логина,</p>
+</li>
+<li>
+<p>сравнивать тестовые данные.</p>
 </li>
 </ul>
-<p>Пример:</p>
-<pre><code class="language-python">def greet_user(name):
-    print(&quot;Привет,&quot;, name)
+<p>Для этого в Python используются условные конструкции</p>
+<h2 id="1">1. Базовый синтаксис</h2>
+<pre><code class="language-python">if условие:
+    # выполняется, если условие истинно
+elif другое_условие:
+    # выполняется, если первое не сработало
+else:
+    # выполняется во всех остальных случаях
+</code></pre>
+<p><strong>Важно</strong>: отступы в Python обязательны (обычно 4 пробела).</p>
+<h2 id="2">2. Простейший пример</h2>
+<pre><code class="language-python">status = &quot;active&quot;
 
-greet_user(&quot;Ира&quot;)
-greet_user(&quot;Петя&quot;)
+if status == &quot;active&quot;:
+    print(&quot;Пользователь активен&quot;)
+elif status == &quot;blocked&quot;:
+    print(&quot;Пользователь заблокирован&quot;)
+else:
+    print(&quot;Неизвестный статус&quot;)
 </code></pre>
-<ul>
-<li>
-<p>Здесь <code>name</code> — аргумент функции.</p>
-</li>
-<li>
-<p>Мы передаём <code>"Ира"</code> или <code>"Петя"</code>, и функция использует эти данные.</p>
-</li>
-</ul>
-<p><strong>Типы аргументов</strong></p>
-<ol>
-<li><strong>Обязательные</strong> — функция не запустится без них</li>
-</ol>
-<pre><code class="language-python">def add(a, b):
-    return a + b
+<h2 id="3">3. Логические операторы</h2>
+<p>Можно проверять сразу несколько условий.</p>
+<pre><code class="language-python">age = 25
+country = &quot;UA&quot;
 
-add(5, 7)  # OK
-# add(5)  # Ошибка!
+if age &gt;= 18 and country == &quot;UA&quot;:
+    print(&quot;Разрешён доступ&quot;)
 </code></pre>
-<ol>
-<li><strong>Необязательные / с дефолтным значением</strong></li>
-</ol>
-<pre><code class="language-python">def greet_user(name=&quot;Гость&quot;):
-    print(&quot;Привет,&quot;, name)
+<pre><code class="language-python">if age &lt; 18 or country != &quot;UA&quot;:
+    print(&quot;Доступ запрещён&quot;)
+</code></pre>
+<pre><code class="language-python">if not age == 30:
+    print(&quot;Возраст не равен 30&quot;)
+</code></pre>
+<h2 id="4">4. Вложенные условия</h2>
+<pre><code class="language-python">response_code = 200
+response_time = 120
 
-greet_user()       # Привет, Гость
-greet_user(&quot;Ира&quot;)  # Привет, Ира
+if response_code == 200:
+    if response_time &lt; 500:
+        print(&quot;API работает корректно&quot;)
+    else:
+        print(&quot;API отвечает слишком медленно&quot;)
+else:
+    print(&quot;Ошибка ответа от API&quot;)
 </code></pre>
-<h2 id="3-args">3. *args — любое количество позиционных аргументов</h2>
-<p><strong>Что это</strong>:</p>
-<ul>
-<li>
-<p>Позволяет передавать функции <strong>любое количество обычных аргументов</strong> (по позиции).</p>
-</li>
-<li>
-<p>Аргументы собираются в кортеж внутри функции.</p>
-</li>
-</ul>
-<p><strong>Пример</strong>:</p>
-<pre><code class="language-python">def sum_numbers(*args):
-    total = 0
-    for num in args:
-        total += num
-    return total
-
-print(sum_numbers(1, 2, 3))       # 6
-print(sum_numbers(5, 10, 15, 20)) # 50
+<h2 id="5">5. Тернарный оператор</h2>
+<p>Краткая запись <code>if-else</code>.</p>
+<pre><code class="language-python">status = &quot;active&quot;
+message = &quot;ОК&quot; if status == &quot;active&quot; else &quot;Ошибка&quot;
+print(message)  # ОК    
 </code></pre>
-<ul>
-<li>
-<p>Можно передавать сколько угодно чисел.</p>
-</li>
-<li>
-<p>Внутри функции <code>args</code> — это кортеж <code>(1, 2, 3)</code></p>
-</li>
-</ul>
-<h2 id="4-kwargs">4. **kwargs — любое количество именованных аргументов</h2>
-<p><strong>Что это</strong>:</p>
-<ul>
-<li>
-<p>Позволяет передавать функцию любое количество аргументов с именами.</p>
-</li>
-<li>
-<p>Аргументы собираются в словарь внутри функции.</p>
-</li>
-</ul>
-<p><strong>Пример</strong></p>
-<pre><code class="language-python">def greet_users(**kwargs):
-    for name, greeting in kwargs.items():
-        print(f&quot;{greeting}, {name}!&quot;)
-
-greet_users(Ira=&quot;Привет&quot;, Petya=&quot;Здравствуйте&quot;, Olga=&quot;Приветствую&quot;)
-</code></pre>
-<p>Результат:</p>
-<pre><code class="language-bash">Привет, Ira!
-Здравствуйте, Petya!
-Приветствую, Olga!
-</code></pre>
-<ul>
-<li>Внутри функции <code>kwargs</code> — это словарь: <code>{'Ira': 'Привет', 'Petya': 'Здравствуйте', 'Olga': 'Приветствую'}</code></li>
-</ul>
-<h2 id="5-args-kwargs">5. Комбинирование обычных аргументов, <em>args и </em>*kwargs</h2>
-<pre><code class="language-python">def show_info(title, *args, **kwargs):
-    print(&quot;Заголовок:&quot;, title)
-    print(&quot;Аргументы:&quot;, args)
-    print(&quot;Ключевые аргументы:&quot;, kwargs)
-
-show_info(&quot;Информация&quot;, 1, 2, 3, name=&quot;Ира&quot;, age=20)
-</code></pre>
-<p><strong>Результат</strong>:</p>
-<pre><code class="language-bash">Заголовок: Информация
-Аргументы: (1, 2, 3)
-Ключевые аргументы: {'name': 'Ира', 'age': 20}
-</code></pre>
-<p><strong>Когда это полезно</strong>:</p>
-<ul>
-<li>
-<p>Когда не знаешь заранее, сколько данных придёт в функцию</p>
-</li>
-<li>
-<p>Для написания универсальных функций (например, логгеры, обработчики данных)</p>
-</li>
-<li>
-<p>Для чистого и читаемого кода без повторений</p>
-</li>
-</ul>
-<h2 id="6-return">6. Возвращаемое значение (return)</h2>
-<p><strong>Что это</strong>:</p>
-<ul>
-<li>
-<p>Результат работы функции, который можно сохранить или использовать дальше.</p>
-</li>
-<li>
-<p>Если не использовать <code>return</code>, функция вернёт <code>None</code>.</p>
-</li>
-</ul>
-<pre><code class="language-python">def add_numbers(a, b):
-    return a + b
-
-result = add_numbers(5, 7)
-print(result)  # 12
-</code></pre>
-<ul>
-<li>
-<p><code>a</code> и <code>b</code> — аргументы</p>
-</li>
-<li>
-<p><code>12</code> — возвращаемое значение</p>
-</li>
-</ul>
         </div>
       
       <hr/>
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2025-09-01 05:52:54.261848+00:00
+  Docs Build Date UTC : 2025-09-01 05:52:54.264392+00:00
   -->
 </div>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

@@ -11,9 +11,9 @@
         
         
         
-        <link rel="canonical" href="https://tokyrylo.github.io/aqa/functions/args/">
+        <link rel="canonical" href="https://tokyrylo.github.io/aqa/getting_started/strings/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Аргументы и возвращаемые значения - Start AQA Python</title>
+        <title>Строки - Start AQA Python</title>
         <link rel="stylesheet" href="../../css/theme.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css">
         <script src="../../js/theme.js" defer></script>
@@ -66,7 +66,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/install/">Установка</a>
+    <a href="../install/">Установка</a>
 </li>
 
         
@@ -75,7 +75,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/venv/">Виртуальное окружение (venv) — как создавать и использовать</a>
+    <a href="../venv/">Виртуальное окружение (venv) — как создавать и использовать</a>
 </li>
 
         
@@ -84,7 +84,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/start_program/">Запуск первой программы</a>
+    <a href="../start_program/">Запуск первой программы</a>
 </li>
 
         
@@ -105,7 +105,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/variables/">Переменные</a>
+    <a href="../variables/">Переменные</a>
 </li>
 
         
@@ -114,7 +114,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/data_types/">Типы данных</a>
+    <a href="../data_types/">Типы данных</a>
 </li>
 
         
@@ -123,7 +123,16 @@
 -->
 
 <li >
-    <a href="../../getting_started/operators/">Операторы</a>
+    <a href="../operators/">Операторы</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li class="active">
+    <a href="./">Строки</a>
 </li>
 
         
@@ -132,7 +141,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/strings/">Строки</a>
+    <a href="../collections/">Коллекции</a>
 </li>
 
         
@@ -141,7 +150,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/collections/">Коллекции</a>
+    <a href="../input/">Ввод данных</a>
 </li>
 
         
@@ -150,7 +159,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/input/">Ввод данных</a>
+    <a href="../conditional/">Условные конструкции</a>
 </li>
 
         
@@ -159,16 +168,7 @@
 -->
 
 <li >
-    <a href="../../getting_started/conditional/">Условные конструкции</a>
-</li>
-
-        
-            <!--
-
--->
-
-<li >
-    <a href="../../getting_started/loops/">Циклы</a>
+    <a href="../loops/">Циклы</a>
 </li>
 
         
@@ -189,7 +189,7 @@
 -->
 
 <li >
-    <a href="../">Зачем нужна функция</a>
+    <a href="../../functions/">Зачем нужна функция</a>
 </li>
 
         
@@ -198,16 +198,7 @@
 -->
 
 <li >
-    <a href="../creating/">Как писать свои функции</a>
-</li>
-
-        
-            <!--
-
--->
-
-<li class="active">
-    <a href="./">Аргументы и возвращаемые значения</a>
+    <a href="../../functions/creating/">Как писать свои функции</a>
 </li>
 
         
@@ -216,7 +207,16 @@
 -->
 
 <li >
-    <a href="../final_task.md">Практика функция проверки логина и пароля.</a>
+    <a href="../../functions/args/">Аргументы и возвращаемые значения</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../functions/final_task.md">Практика функция проверки логина и пароля.</a>
 </li>
 
         
@@ -579,17 +579,19 @@
           <h2>Table Of Contents</h2>
           <ul id="toc" class="current">
             
-              <li><a href="#_1">Аргументы и возвращаемые значения функций</a></li>
+              <li><a href="#_1">Строки</a></li>
               
-                  <li class="child"><a href="#1">1. Аргументы (параметры)</a></li>
+                  <li class="child"><a href="#1">1. Создание строк</a></li>
               
-                  <li class="child"><a href="#3-args">3. *args — любое количество позиционных аргументов</a></li>
+                  <li class="child"><a href="#2">2. Конкатенация (склеивание строк)</a></li>
               
-                  <li class="child"><a href="#4-kwargs">4. **kwargs — любое количество именованных аргументов</a></li>
+                  <li class="child"><a href="#3-f-f-strings">3. F-строки (f-strings)</a></li>
               
-                  <li class="child"><a href="#5-args-kwargs">5. Комбинирование обычных аргументов, args и *kwargs</a></li>
+                  <li class="child"><a href="#4-split">4. Разделение строк: .split()</a></li>
               
-                  <li class="child"><a href="#6-return">6. Возвращаемое значение (return)</a></li>
+                  <li class="child"><a href="#5-replace">5. Замена в строке: .replace()</a></li>
+              
+                  <li class="child"><a href="#6-aqa">6. Полезные методы для AQA</a></li>
               
             
         </ul>
@@ -604,12 +606,12 @@
       
         <div class="prev">
           
-            <a href="../creating/" title="Как писать свои функции">&#8592; Previous Page</a>
+            <a href="../operators/" title="Операторы">&#8592; Previous Page</a>
           
         </div>
          <div class="next">
           
-            Next Page &#8594;
+        <a href="../collections/" title="Коллекции"/>Next Page &#8594;</a>
           
         </div>
       
@@ -618,159 +620,133 @@
 
       
         <div id="body">
-            <h1 id="_1">Аргументы и возвращаемые значения функций</h1>
-<h2 id="1">1. Аргументы (параметры)</h2>
-<p><strong>Что это</strong>:</p>
+            <h2 id="_1">Строки</h2>
+<p><strong>Строки</strong> — один из самых часто используемых типов данных в автоматизации тестирования.
+Мы работаем с текстом при:</p>
 <ul>
 <li>
-<p>Данные, которые мы передаём функции, чтобы она могла с ними работать.</p>
+<p>проверке ответов API (JSON, XML, HTML),</p>
 </li>
 <li>
-<p>Это как ингредиенты для рецепта: без них нельзя приготовить блюдо.</p>
+<p>обработке логов и сообщений,</p>
+</li>
+<li>
+<p>генерации тестовых данных (номеров телефонов, email-адресов, сообщений).</p>
 </li>
 </ul>
-<p>Пример:</p>
-<pre><code class="language-python">def greet_user(name):
-    print(&quot;Привет,&quot;, name)
+<p>Поэтому важно уметь уверенно работать со строками.</p>
+<h3 id="1">1. Создание строк</h3>
+<p>В Python строка может быть записана:</p>
+<pre><code class="language-python">text1 = &quot;Hello&quot;
+text2 = 'World'
+text3 = &quot;&quot;&quot;Многострочная
+строка
+с переводами строк&quot;&quot;&quot;
+</code></pre>
+<blockquote>
+<blockquote>
+<p>Одинарные и двойные кавычки равнозначны.
+Для многострочного текста используют тройные кавычки """ """.</p>
+</blockquote>
+</blockquote>
+<h3 id="2">2. Конкатенация (склеивание строк)</h3>
+<p>Конкатенация — это объединение строк через <code>+</code>.</p>
+<pre><code class="language-python">first = &quot;Quality&quot;
+second = &quot;Assurance&quot;
 
-greet_user(&quot;Ира&quot;)
-greet_user(&quot;Петя&quot;)
+result = first + &quot; &quot; + second
+print(result)  # Quality Assurance
 </code></pre>
 <ul>
-<li>
-<p>Здесь <code>name</code> — аргумент функции.</p>
-</li>
-<li>
-<p>Мы передаём <code>"Ира"</code> или <code>"Петя"</code>, и функция использует эти данные.</p>
-</li>
+<li>Можно склеивать не только две строки, но и много:</li>
 </ul>
-<p><strong>Типы аргументов</strong></p>
-<ol>
-<li><strong>Обязательные</strong> — функция не запустится без них</li>
-</ol>
-<pre><code class="language-python">def add(a, b):
-    return a + b
-
-add(5, 7)  # OK
-# add(5)  # Ошибка!
+<pre><code class="language-python">info = &quot;User: &quot; + &quot;test_user&quot; + &quot;, Status: &quot; + &quot;active&quot;
+print(info)  # User: test_user, Status: active
 </code></pre>
-<ol>
-<li><strong>Необязательные / с дефолтным значением</strong></li>
-</ol>
-<pre><code class="language-python">def greet_user(name=&quot;Гость&quot;):
-    print(&quot;Привет,&quot;, name)
-
-greet_user()       # Привет, Гость
-greet_user(&quot;Ира&quot;)  # Привет, Ира
+<p><strong>Недостаток</strong>: если строк много, код становится длинным и плохо читаемым.</p>
+<h3 id="3-f-f-strings">3. F-строки (f-strings)</h3>
+<p>Это современный способ форматирования строк, который проще и удобнее конкатенации.</p>
+<pre><code class="language-python">name = &quot;Ольга&quot;
+age = 28
+print(f&quot;Имя: {name}, Возраст: {age}&quot;)
+# Имя: Ольга, Возраст: 28
 </code></pre>
-<h2 id="3-args">3. *args — любое количество позиционных аргументов</h2>
-<p><strong>Что это</strong>:</p>
-<ul>
-<li>
-<p>Позволяет передавать функции <strong>любое количество обычных аргументов</strong> (по позиции).</p>
-</li>
-<li>
-<p>Аргументы собираются в кортеж внутри функции.</p>
-</li>
-</ul>
-<p><strong>Пример</strong>:</p>
-<pre><code class="language-python">def sum_numbers(*args):
-    total = 0
-    for num in args:
-        total += num
-    return total
-
-print(sum_numbers(1, 2, 3))       # 6
-print(sum_numbers(5, 10, 15, 20)) # 50
+<p>Преимущества f-строк:
+ - Поддерживают выражения:</p>
+<pre><code class="language-python">print(f&quot;Через год будет {age + 1}&quot;)
+# Через год будет 29
 </code></pre>
 <ul>
-<li>
-<p>Можно передавать сколько угодно чисел.</p>
-</li>
-<li>
-<p>Внутри функции <code>args</code> — это кортеж <code>(1, 2, 3)</code></p>
-</li>
+<li>Можно форматировать числа:</li>
 </ul>
-<h2 id="4-kwargs">4. **kwargs — любое количество именованных аргументов</h2>
-<p><strong>Что это</strong>:</p>
-<ul>
-<li>
-<p>Позволяет передавать функцию любое количество аргументов с именами.</p>
-</li>
-<li>
-<p>Аргументы собираются в словарь внутри функции.</p>
-</li>
-</ul>
-<p><strong>Пример</strong></p>
-<pre><code class="language-python">def greet_users(**kwargs):
-    for name, greeting in kwargs.items():
-        print(f&quot;{greeting}, {name}!&quot;)
-
-greet_users(Ira=&quot;Привет&quot;, Petya=&quot;Здравствуйте&quot;, Olga=&quot;Приветствую&quot;)
+<pre><code class="language-python">pi = 3.1415926535
+print(f&quot;Число Пи с округлением: {pi:.2f}&quot;)
+# Число Пи с округлением: 3.14
 </code></pre>
-<p>Результат:</p>
-<pre><code class="language-bash">Привет, Ira!
-Здравствуйте, Petya!
-Приветствую, Olga!
+<p><strong>В автотестах</strong> f-строки — основной инструмент для формирования сообщений об ошибках и логов.</p>
+<h3 id="4-split">4. Разделение строк: .split()</h3>
+<p>Метод <code>.split()</code> делит строку на список частей.</p>
+<pre><code class="language-python">text = &quot;apple,banana,orange&quot;
+fruits = text.split(&quot;,&quot;)
+print(fruits)  
+# ['apple', 'banana', 'orange']
+</code></pre>
+<p><strong>Частые применения в тестировании:</strong></p>
+<ul>
+<li>Разбить логи по строкам:</li>
+</ul>
+<pre><code class="language-python">log = &quot;ERROR: test1 failed\nOK: test2 passed&quot;
+lines = log.split(&quot;\n&quot;)
+print(lines)  
+# ['ERROR: test1 failed', 'OK: test2 passed']
 </code></pre>
 <ul>
-<li>Внутри функции <code>kwargs</code> — это словарь: <code>{'Ira': 'Привет', 'Petya': 'Здравствуйте', 'Olga': 'Приветствую'}</code></li>
+<li>Разделить строку по пробелам (по умолчанию):</li>
 </ul>
-<h2 id="5-args-kwargs">5. Комбинирование обычных аргументов, <em>args и </em>*kwargs</h2>
-<pre><code class="language-python">def show_info(title, *args, **kwargs):
-    print(&quot;Заголовок:&quot;, title)
-    print(&quot;Аргументы:&quot;, args)
-    print(&quot;Ключевые аргументы:&quot;, kwargs)
-
-show_info(&quot;Информация&quot;, 1, 2, 3, name=&quot;Ира&quot;, age=20)
+<pre><code class="language-python">words = &quot;Hello world from Python&quot;.split()
+print(words)  
+# ['Hello', 'world', 'from', 'Python']
 </code></pre>
-<p><strong>Результат</strong>:</p>
-<pre><code class="language-bash">Заголовок: Информация
-Аргументы: (1, 2, 3)
-Ключевые аргументы: {'name': 'Ира', 'age': 20}
+<h3 id="5-replace">5. Замена в строке: .replace()</h3>
+<p>Метод <code>.replace(old, new)</code> заменяет подстроку.</p>
+<pre><code class="language-python">message = &quot;Hello QA!&quot;
+new_message = message.replace(&quot;QA&quot;, &quot;AQA&quot;)
+print(new_message)  # Hello AQA!
 </code></pre>
-<p><strong>Когда это полезно</strong>:</p>
+<p><strong>Пример из тестов:</strong>
+Очистка телефонного номера:</p>
+<pre><code class="language-python">phone = &quot;+38 (067) 123-45-67&quot;
+cleaned = phone.replace(&quot;(&quot;, &quot;&quot;).replace(&quot;)&quot;, &quot;&quot;).replace(&quot;-&quot;, &quot;&quot;).replace(&quot; &quot;, &quot;&quot;)
+print(cleaned)  
+# +380671234567
+</code></pre>
+<h3 id="6-aqa">6. Полезные методы для AQA</h3>
 <ul>
-<li>
-<p>Когда не знаешь заранее, сколько данных придёт в функцию</p>
-</li>
-<li>
-<p>Для написания универсальных функций (например, логгеры, обработчики данных)</p>
-</li>
-<li>
-<p>Для чистого и читаемого кода без повторений</p>
-</li>
+<li><code>.upper()</code> — всё в верхний регистр:</li>
 </ul>
-<h2 id="6-return">6. Возвращаемое значение (return)</h2>
-<p><strong>Что это</strong>:</p>
-<ul>
-<li>
-<p>Результат работы функции, который можно сохранить или использовать дальше.</p>
-</li>
-<li>
-<p>Если не использовать <code>return</code>, функция вернёт <code>None</code>.</p>
-</li>
-</ul>
-<pre><code class="language-python">def add_numbers(a, b):
-    return a + b
-
-result = add_numbers(5, 7)
-print(result)  # 12
+<pre><code class="language-python">&quot;test&quot;.upper()  # TEST
 </code></pre>
 <ul>
-<li>
-<p><code>a</code> и <code>b</code> — аргументы</p>
-</li>
-<li>
-<p><code>12</code> — возвращаемое значение</p>
-</li>
+<li><code>.lower()</code> — всё в нижний регистр:</li>
 </ul>
+<pre><code class="language-python">&quot;HELLO&quot;.lower()  # hello
+</code></pre>
+<ul>
+<li><code>.strip()</code> — убирает пробелы и спецсимволы по краям:</li>
+</ul>
+<pre><code class="language-python">&quot;   test   &quot;.strip()  # 'test'
+</code></pre>
+<ul>
+<li><code>.startswith()</code> и <code>.endswith()</code> — проверка начала и конца строки:</li>
+</ul>
+<pre><code class="language-python">&quot;test_case.py&quot;.endswith(&quot;.py&quot;)  # True
+</code></pre>
         </div>
       
       <hr/>
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2025-09-01 05:52:54.261848+00:00
+  Docs Build Date UTC : 2025-09-01 05:52:54.270019+00:00
   -->
 </div>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
