@@ -11,9 +11,9 @@
         
         
         
-        <link rel="canonical" href="https://tokyrylo.github.io/aqa/getting_started/final_task/">
+        <link rel="canonical" href="https://tokyrylo.github.io/aqa/functions/lambda/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Мини-упражнение: «Личный калькулятор» - Start AQA Python</title>
+        <title>Лямбда-функции - Start AQA Python</title>
         <link rel="stylesheet" href="../../css/theme.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css">
         <script src="../../js/theme.js" defer></script>
@@ -66,7 +66,7 @@
 -->
 
 <li >
-    <a href="../install/">Установка</a>
+    <a href="../../getting_started/install/">Установка</a>
 </li>
 
         
@@ -75,7 +75,7 @@
 -->
 
 <li >
-    <a href="../venv/">Виртуальное окружение (venv) — как создавать и использовать</a>
+    <a href="../../getting_started/venv/">Виртуальное окружение (venv) — как создавать и использовать</a>
 </li>
 
         
@@ -84,7 +84,7 @@
 -->
 
 <li >
-    <a href="../start_program/">Запуск первой программы</a>
+    <a href="../../getting_started/start_program/">Запуск первой программы</a>
 </li>
 
         
@@ -105,7 +105,7 @@
 -->
 
 <li >
-    <a href="../variables/">Переменные</a>
+    <a href="../../getting_started/variables/">Переменные</a>
 </li>
 
         
@@ -114,7 +114,7 @@
 -->
 
 <li >
-    <a href="../data_types/">Типы данных</a>
+    <a href="../../getting_started/data_types/">Типы данных</a>
 </li>
 
         
@@ -123,7 +123,7 @@
 -->
 
 <li >
-    <a href="../operators/">Операторы</a>
+    <a href="../../getting_started/operators/">Операторы</a>
 </li>
 
         
@@ -132,7 +132,7 @@
 -->
 
 <li >
-    <a href="../strings/">Строки</a>
+    <a href="../../getting_started/strings/">Строки</a>
 </li>
 
         
@@ -141,7 +141,7 @@
 -->
 
 <li >
-    <a href="../collections/">Коллекции</a>
+    <a href="../../getting_started/collections/">Коллекции</a>
 </li>
 
         
@@ -150,7 +150,7 @@
 -->
 
 <li >
-    <a href="../input/">Ввод данных</a>
+    <a href="../../getting_started/input/">Ввод данных</a>
 </li>
 
         
@@ -159,7 +159,7 @@
 -->
 
 <li >
-    <a href="../conditional/">Условные конструкции</a>
+    <a href="../../getting_started/conditional/">Условные конструкции</a>
 </li>
 
         
@@ -168,7 +168,7 @@
 -->
 
 <li >
-    <a href="../loops/">Циклы</a>
+    <a href="../../getting_started/loops/">Циклы</a>
 </li>
 
         
@@ -189,7 +189,7 @@
 -->
 
 <li >
-    <a href="../../functions/">Зачем нужна функция</a>
+    <a href="../">Зачем нужна функция</a>
 </li>
 
         
@@ -198,7 +198,7 @@
 -->
 
 <li >
-    <a href="../../functions/creating/">Как писать свои функции</a>
+    <a href="../creating/">Как писать свои функции</a>
 </li>
 
         
@@ -207,7 +207,7 @@
 -->
 
 <li >
-    <a href="../../functions/args/">Аргументы и возвращаемые значения</a>
+    <a href="../args/">Аргументы и возвращаемые значения</a>
 </li>
 
         
@@ -216,7 +216,16 @@
 -->
 
 <li >
-    <a href="../../functions/scope/">Область видимости</a>
+    <a href="../scope/">Область видимости</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li class="active">
+    <a href="./">Лямбда-функции</a>
 </li>
 
         
@@ -225,16 +234,7 @@
 -->
 
 <li >
-    <a href="../../functions/lambda/">Лямбда-функции</a>
-</li>
-
-        
-            <!--
-
--->
-
-<li >
-    <a href="../../functions/final_task.md">Практика функция проверки логина и пароля.</a>
+    <a href="../final_task.md">Практика функция проверки логина и пароля.</a>
 </li>
 
         
@@ -597,9 +597,13 @@
           <h2>Table Of Contents</h2>
           <ul id="toc" class="current">
             
-              <li><a href="#-">Мини-упражнение: «Личный калькулятор»</a></li>
+              <li><a href="#-python">Лямбда-функции в Python</a></li>
               
-                  <li class="child"><a href="#_1">Подсказки</a></li>
+                  <li class="child"><a href="#_1">Когда использовать?</a></li>
+              
+                  <li class="child"><a href="#_2">Примеры использования</a></li>
+              
+                  <li class="child"><a href="#-">Ограничения лямбда-функций</a></li>
               
             
         </ul>
@@ -612,86 +616,88 @@
     <div class="spacer"><!-- i am margin --></div>
     <div class="markdown-body">
       
+        <div class="prev">
+          
+            <a href="../scope/" title="Область видимости">&#8592; Previous Page</a>
+          
+        </div>
+         <div class="next">
+          
+            Next Page &#8594;
+          
+        </div>
+      
       <div class="clear"></div>
     <div id="mkdocs-search-results"></div>
 
       
         <div id="body">
-            <h1 id="-">Мини-упражнение: «Личный калькулятор»</h1>
-<p><strong>Цель упражнения</strong></p>
-<ol>
-<li>
-<p>Научиться создавать переменные разных типов: строки, числа, логические значения.</p>
-</li>
-<li>
-<p>Научиться использовать арифметические, сравнения и логические операторы.</p>
-</li>
-<li>
-<p>Научиться получать данные от пользователя через input().</p>
-</li>
-</ol>
-<p><strong>Задача</strong></p>
-<p>Напиши программу, которая:</p>
-<ol>
-<li>
-<p>Спрашивает у пользователя:</p>
-</li>
-<li>
-<p>Имя (строка)</p>
-</li>
-<li>
-<p>Возраст (число)</p>
-</li>
-<li>
-<p>Любит ли пиццу (логическое: да/нет)</p>
-</li>
-<li>
-<p>Считает, сколько лет будет через 5 лет.</p>
-</li>
-<li>
-<p>Проверяет, является ли пользователь взрослым (&gt;=18 лет).</p>
-</li>
-<li>
-<p>Выводит все данные красиво на экран.</p>
-</li>
-</ol>
-<h2 id="_1">Подсказки</h2>
-<p><strong>Шаг 1: Ввод данных</strong></p>
-<pre><code class="language-python">name = input(&quot;Введите ваше имя: &quot;)
-age = int(input(&quot;Введите ваш возраст: &quot;))
-likes_pizza_input = input(&quot;Вы любите пиццу? (да/нет): &quot;)
+            <h1 id="-python">Лямбда-функции в Python</h1>
+<p><strong>Лямбда-функция</strong>— это анонимная (без имени) функция, которую можно записать в одну строку.
+Она создаётся с помощью ключевого слова <code>lambda</code>.</p>
+<p>Синтаксис:</p>
+<pre><code class="language-python">lambda аргументы: выражение
 </code></pre>
-<p><strong>Шаг 2: Логическое значение</strong></p>
-<pre><code class="language-python">likes_pizza = likes_pizza_input.lower() == &quot;да&quot;  # True если ответ &quot;да&quot;
+<p>Пример:</p>
+<pre><code class="language-python">square = lambda x: x ** 2
+print(square(4))  # 16
 </code></pre>
-<p><strong>Шаг 3: Арифметика и сравнение</strong></p>
-<pre><code class="language-python">age_in_5_years = age + 5
-is_adult = age &gt;= 18
+<p>То же самое через обычную функцию:</p>
+<pre><code class="language-python">def square(x):
+    return x ** 2
 </code></pre>
-<p><strong>Шаг 4: Вывод данных</strong></p>
-<pre><code class="language-python">print(&quot;Имя:&quot;, name)
-print(&quot;Возраст:&quot;, age)
-print(&quot;Через 5 лет будет:&quot;, age_in_5_years)
-print(&quot;Вы взрослый?&quot;, is_adult)
-print(&quot;Любите пиццу?&quot;, likes_pizza)
+<h2 id="_1">Когда использовать?</h2>
+<p>Лямбда-функции применяются там, где нужно быстро описать простую логику и не хочется создавать отдельную def-функцию.</p>
+<p>Часто встречается в AQA:</p>
+<ul>
+<li>
+<p>при обработке данных из API,</p>
+</li>
+<li>
+<p>при фильтрации или сортировке результатов,</p>
+</li>
+<li>
+<p>в callback-функциях.</p>
+</li>
+</ul>
+<h2 id="_2">Примеры использования</h2>
+<p><strong>Фильтрация данных (<code>filter</code>)</strong></p>
+<pre><code class="language-python">numbers = [1, 2, 3, 4, 5, 6]
+even = list(filter(lambda x: x % 2 == 0, numbers))
+print(even)  # [2, 4, 6]
 </code></pre>
-<h3 id="_2">Пример работы программы</h3>
-<pre><code class="language-bash">Введите ваше имя: Ира
-Введите ваш возраст: 20
-Вы любите пиццу? (да/нет): да
+<p><strong>Преобразование списка (<code>map</code>)</strong></p>
+<pre><code class="language-python">numbers = [1, 2, 3]
+squared = list(map(lambda x: x ** 2, numbers))
+print(squared)  # [1, 4, 9]
+</code></pre>
+<p><strong>Сортировка по ключу (<code>sorted</code>)</strong></p>
+<pre><code class="language-python">users = [
+    {&quot;name&quot;: &quot;Alice&quot;, &quot;age&quot;: 25},
+    {&quot;name&quot;: &quot;Bob&quot;, &quot;age&quot;: 30},
+    {&quot;name&quot;: &quot;Charlie&quot;, &quot;age&quot;: 20}
+]
 
-Имя: Ира
-Возраст: 20
-Через 5 лет будет: 25
-Вы взрослый? True
-Любите пиццу? True
+sorted_users = sorted(users, key=lambda u: u[&quot;age&quot;])
+print(sorted_users)
+# [{'name': 'Charlie', 'age': 20}, {'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 30}]
 </code></pre>
+<p><strong>Быстрая проверка в автотесте</strong></p>
+<pre><code class="language-python">status_codes = [200, 201, 404, 500]
+assert all(map(lambda code: code &lt; 500, status_codes)), &quot;Найден серверный баг&quot;
+</code></pre>
+<h2 id="-">Ограничения лямбда-функций</h2>
+<ul>
+<li>В <code>lambda</code> можно писать только одно выражение (нельзя много строк).</li>
+<li>Нельзя использовать конструкции <code>if-elif-else</code>с блоками (только тернарный оператор).</li>
+<li>Читаемость кода может пострадать, если злоупотреблять.</li>
+</ul>
         </div>
       
       <hr/>
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2025-09-01 06:25:09.163712+00:00
+  Docs Build Date UTC : 2025-09-01 06:25:09.160138+00:00
   -->
 </div>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

@@ -11,9 +11,9 @@
         
         
         
-        <link rel="canonical" href="https://tokyrylo.github.io/aqa/getting_started/final_task/">
+        <link rel="canonical" href="https://tokyrylo.github.io/aqa/functions/scope/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Мини-упражнение: «Личный калькулятор» - Start AQA Python</title>
+        <title>Область видимости - Start AQA Python</title>
         <link rel="stylesheet" href="../../css/theme.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css">
         <script src="../../js/theme.js" defer></script>
@@ -66,7 +66,7 @@
 -->
 
 <li >
-    <a href="../install/">Установка</a>
+    <a href="../../getting_started/install/">Установка</a>
 </li>
 
         
@@ -75,7 +75,7 @@
 -->
 
 <li >
-    <a href="../venv/">Виртуальное окружение (venv) — как создавать и использовать</a>
+    <a href="../../getting_started/venv/">Виртуальное окружение (venv) — как создавать и использовать</a>
 </li>
 
         
@@ -84,7 +84,7 @@
 -->
 
 <li >
-    <a href="../start_program/">Запуск первой программы</a>
+    <a href="../../getting_started/start_program/">Запуск первой программы</a>
 </li>
 
         
@@ -105,7 +105,7 @@
 -->
 
 <li >
-    <a href="../variables/">Переменные</a>
+    <a href="../../getting_started/variables/">Переменные</a>
 </li>
 
         
@@ -114,7 +114,7 @@
 -->
 
 <li >
-    <a href="../data_types/">Типы данных</a>
+    <a href="../../getting_started/data_types/">Типы данных</a>
 </li>
 
         
@@ -123,7 +123,7 @@
 -->
 
 <li >
-    <a href="../operators/">Операторы</a>
+    <a href="../../getting_started/operators/">Операторы</a>
 </li>
 
         
@@ -132,7 +132,7 @@
 -->
 
 <li >
-    <a href="../strings/">Строки</a>
+    <a href="../../getting_started/strings/">Строки</a>
 </li>
 
         
@@ -141,7 +141,7 @@
 -->
 
 <li >
-    <a href="../collections/">Коллекции</a>
+    <a href="../../getting_started/collections/">Коллекции</a>
 </li>
 
         
@@ -150,7 +150,7 @@
 -->
 
 <li >
-    <a href="../input/">Ввод данных</a>
+    <a href="../../getting_started/input/">Ввод данных</a>
 </li>
 
         
@@ -159,7 +159,7 @@
 -->
 
 <li >
-    <a href="../conditional/">Условные конструкции</a>
+    <a href="../../getting_started/conditional/">Условные конструкции</a>
 </li>
 
         
@@ -168,7 +168,7 @@
 -->
 
 <li >
-    <a href="../loops/">Циклы</a>
+    <a href="../../getting_started/loops/">Циклы</a>
 </li>
 
         
@@ -189,7 +189,7 @@
 -->
 
 <li >
-    <a href="../../functions/">Зачем нужна функция</a>
+    <a href="../">Зачем нужна функция</a>
 </li>
 
         
@@ -198,7 +198,7 @@
 -->
 
 <li >
-    <a href="../../functions/creating/">Как писать свои функции</a>
+    <a href="../creating/">Как писать свои функции</a>
 </li>
 
         
@@ -207,7 +207,16 @@
 -->
 
 <li >
-    <a href="../../functions/args/">Аргументы и возвращаемые значения</a>
+    <a href="../args/">Аргументы и возвращаемые значения</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li class="active">
+    <a href="./">Область видимости</a>
 </li>
 
         
@@ -216,7 +225,7 @@
 -->
 
 <li >
-    <a href="../../functions/scope/">Область видимости</a>
+    <a href="../lambda/">Лямбда-функции</a>
 </li>
 
         
@@ -225,16 +234,7 @@
 -->
 
 <li >
-    <a href="../../functions/lambda/">Лямбда-функции</a>
-</li>
-
-        
-            <!--
-
--->
-
-<li >
-    <a href="../../functions/final_task.md">Практика функция проверки логина и пароля.</a>
+    <a href="../final_task.md">Практика функция проверки логина и пароля.</a>
 </li>
 
         
@@ -597,9 +597,17 @@
           <h2>Table Of Contents</h2>
           <ul id="toc" class="current">
             
-              <li><a href="#-">Мини-упражнение: «Личный калькулятор»</a></li>
+              <li><a href="#python">Область видимости переменных в Python</a></li>
               
-                  <li class="child"><a href="#_1">Подсказки</a></li>
+                  <li class="child"><a href="#1-local">1. Локальная область (Local)</a></li>
+              
+                  <li class="child"><a href="#2-global">2. Глобальная область (Global)</a></li>
+              
+                  <li class="child"><a href="#3">3. Изменение глобальной переменной внутри функции</a></li>
+              
+                  <li class="child"><a href="#4-nonlocal-enclosing">4. Вложенные функции и nonlocal (Enclosing)</a></li>
+              
+                  <li class="child"><a href="#5-built-in">5. Built-in</a></li>
               
             
         </ul>
@@ -612,86 +620,97 @@
     <div class="spacer"><!-- i am margin --></div>
     <div class="markdown-body">
       
+        <div class="prev">
+          
+            <a href="../args/" title="Аргументы и возвращаемые значения">&#8592; Previous Page</a>
+          
+        </div>
+         <div class="next">
+          
+        <a href="../lambda/" title="Лямбда-функции"/>Next Page &#8594;</a>
+          
+        </div>
+      
       <div class="clear"></div>
     <div id="mkdocs-search-results"></div>
 
       
         <div id="body">
-            <h1 id="-">Мини-упражнение: «Личный калькулятор»</h1>
-<p><strong>Цель упражнения</strong></p>
-<ol>
+            <h1 id="python">Область видимости переменных в Python</h1>
+<p>Область видимости (<strong>scope</strong>) — это то, где переменная "видна" и может использоваться.</p>
+<p>В Python действует правило <strong>LEGB</strong>:</p>
+<ul>
 <li>
-<p>Научиться создавать переменные разных типов: строки, числа, логические значения.</p>
+<p><strong>L (Local)</strong> — локальная область функции.</p>
 </li>
 <li>
-<p>Научиться использовать арифметические, сравнения и логические операторы.</p>
+<p><strong>E (Enclosing)</strong> — область внешней функции (замыкания).</p>
 </li>
 <li>
-<p>Научиться получать данные от пользователя через input().</p>
-</li>
-</ol>
-<p><strong>Задача</strong></p>
-<p>Напиши программу, которая:</p>
-<ol>
-<li>
-<p>Спрашивает у пользователя:</p>
+<p><strong>G (Global)</strong> — глобальные переменные модуля.</p>
 </li>
 <li>
-<p>Имя (строка)</p>
+<p><strong>B (Built-in)</strong> — встроенные имена Python (<code>len</code>, <code>print</code> и др.).</p>
 </li>
-<li>
-<p>Возраст (число)</p>
-</li>
-<li>
-<p>Любит ли пиццу (логическое: да/нет)</p>
-</li>
-<li>
-<p>Считает, сколько лет будет через 5 лет.</p>
-</li>
-<li>
-<p>Проверяет, является ли пользователь взрослым (&gt;=18 лет).</p>
-</li>
-<li>
-<p>Выводит все данные красиво на экран.</p>
-</li>
-</ol>
-<h2 id="_1">Подсказки</h2>
-<p><strong>Шаг 1: Ввод данных</strong></p>
-<pre><code class="language-python">name = input(&quot;Введите ваше имя: &quot;)
-age = int(input(&quot;Введите ваш возраст: &quot;))
-likes_pizza_input = input(&quot;Вы любите пиццу? (да/нет): &quot;)
-</code></pre>
-<p><strong>Шаг 2: Логическое значение</strong></p>
-<pre><code class="language-python">likes_pizza = likes_pizza_input.lower() == &quot;да&quot;  # True если ответ &quot;да&quot;
-</code></pre>
-<p><strong>Шаг 3: Арифметика и сравнение</strong></p>
-<pre><code class="language-python">age_in_5_years = age + 5
-is_adult = age &gt;= 18
-</code></pre>
-<p><strong>Шаг 4: Вывод данных</strong></p>
-<pre><code class="language-python">print(&quot;Имя:&quot;, name)
-print(&quot;Возраст:&quot;, age)
-print(&quot;Через 5 лет будет:&quot;, age_in_5_years)
-print(&quot;Вы взрослый?&quot;, is_adult)
-print(&quot;Любите пиццу?&quot;, likes_pizza)
-</code></pre>
-<h3 id="_2">Пример работы программы</h3>
-<pre><code class="language-bash">Введите ваше имя: Ира
-Введите ваш возраст: 20
-Вы любите пиццу? (да/нет): да
+</ul>
+<h2 id="1-local">1. Локальная область (Local)</h2>
+<p>Переменная, созданная внутри функции, доступна только в ней.</p>
+<pre><code class="language-python">def test_case():
+    result = &quot;passed&quot;  # локальная переменная
+    print(&quot;Результат:&quot;, result)
 
-Имя: Ира
-Возраст: 20
-Через 5 лет будет: 25
-Вы взрослый? True
-Любите пиццу? True
+test_case()
+# print(result)  # ❌ Ошибка! Вне функции переменная недоступна
+</code></pre>
+<h2 id="2-global">2. Глобальная область (Global)</h2>
+<p>Переменные, объявленные вне функций, доступны везде.</p>
+<pre><code class="language-python">status = &quot;ready&quot;  # глобальная переменная
+
+def run_test():
+    print(&quot;Статус теста:&quot;, status)
+
+run_test()
+print(&quot;Вне функции:&quot;, status)
+</code></pre>
+<h2 id="3">3. Изменение глобальной переменной внутри функции</h2>
+<p>По умолчанию внутри функции нельзя изменять глобальную переменную.
+Нужно явно указать <code>global</code>.</p>
+<pre><code class="language-python">counter = 0
+
+def increase():
+    global counter
+    counter += 1
+
+increase()
+print(counter)  # 1
+</code></pre>
+<h2 id="4-nonlocal-enclosing">4. Вложенные функции и nonlocal (Enclosing)</h2>
+<p>Переменная внешней функции доступна во вложенной.
+Чтобы её изменить — используем <code>nonlocal</code>.</p>
+<pre><code class="language-python">def outer():
+    attempts = 0
+
+    def inner():
+        nonlocal attempts
+        attempts += 1
+        print(&quot;Попытка:&quot;, attempts)
+
+    inner()
+    inner()
+
+outer()
+</code></pre>
+<h2 id="5-built-in">5. Built-in</h2>
+<p>Это встроенные функции Python. Если назвать переменную как встроенную функцию — можно "сломать" код.</p>
+<pre><code class="language-python">len = 10  # ❌ затёрли встроенную функцию
+print(len([&quot;a&quot;, &quot;b&quot;]))  # Ошибка!
 </code></pre>
         </div>
       
       <hr/>
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2025-09-01 06:25:09.163712+00:00
+  Docs Build Date UTC : 2025-09-01 06:25:09.160798+00:00
   -->
 </div>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
